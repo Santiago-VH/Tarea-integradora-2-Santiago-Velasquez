@@ -1,0 +1,5 @@
+package model;
+
+public enum PetState{
+	WAITING,IN_CONSULT,TRANSFER,AUTHORIZED_EXIT,NON_AUTHORIZED_EXIT;
+}
