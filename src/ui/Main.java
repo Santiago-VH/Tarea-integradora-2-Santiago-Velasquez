@@ -17,6 +17,8 @@ public class Main{
 	private int vetsNumber=0;
 	private int petsNumber=0;
 
+
+
 	public Main(){
 		reader= new Scanner(System.in);
 	}
@@ -29,7 +31,7 @@ public class Main{
 
 		int option=0;
 
-
+		petcenter=new PetCenter(petsNumber,vetsNumber);
 
 		do{
 			option=ppal.showMenu();
@@ -97,7 +99,6 @@ public class Main{
 		System.out.println("Ingresar identificacion unica de veterinario\n");
 		vetID=reader.nextLine();
 
-		petcenter=new PetCenter(petsNumber,vetsNumber);
 		petcenter.addVeterinary(idNumber,vetName,vetID,VeterinaryState.FREE);
 	}
 
@@ -175,10 +176,7 @@ public class Main{
 
 			petcenter.addPet(petName,race,age,symptom,species,PetState.WAITING,priority);
 
-
-		
 	}
-
 
 }
 

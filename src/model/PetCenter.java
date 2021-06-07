@@ -1,11 +1,4 @@
 package model;
-import model.Veterinary;
-import model.VeterinaryState;
-import model.Pet;
-import model.Species;
-import model.PetState;
-import model.PetPriority;
-
 
 public class PetCenter{
 
@@ -44,6 +37,7 @@ public class PetCenter{
 		veterinaries[vetsNumber]=new Veterinary(idNumber,vetName,vetID,veterinaryState);
 		vetsNumber++;
 		vetsPosition=vetsNumber;
+		
 	}
 
 	public int getPetsNumber(){
